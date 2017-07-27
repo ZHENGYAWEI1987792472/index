@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		//第一题随机数
+		
+		var seed = [];
+		for (var i = 0;i <= 10;i++) {
+			seed.push(parseInt(Math.random()*(99-66+1)+66));
+		    document.write(seed[i]+" ");
+		}   		    
+		   	var max = Math.max(seed[0],seed[1],seed[2],seed[3],seed[4],seed[5],seed[6],seed[7],seed[8],seed[9]);
+		   	document.write("<br>");
+		    document.write("本次最大的数值是："+max);  
+		    var place = seed.indexOf(max);
+		    document.write("<br>");
+		    document.write("本次："+place);
+		    document.write("<br>");
+		    var min = Math.min(seed[0],seed[1],seed[2],seed[3],seed[4],seed[5],seed[6],seed[7],seed[8],seed[9]);
+		    document.write("<br>");
+		    document.write("本次最小的数值是："+min);
+		    document.write("<br>");
+		    var places = seed.indexOf(min);
+		    document.write("本次："+places);
+		  
+		//第二题随机数选择
+		document.write("<br>");
+		var seeds = [];
+		for (var i = 0;i <= 20;i++) {
+			seeds.push(parseInt(Math.random()*(99-66+1)+66));
+		    document.write(seeds[i]+" ");
+		}   
+		
+		var seedss = [seeds[0],seeds[1],seeds[2],seeds[3],seeds[4],seeds[5],seeds[6],seeds[7],seeds[8],seeds[9],seeds[10],seeds[11],seeds[12],seeds[13],seeds[14],seeds[15],seeds[16],seeds[17],seeds[18],seeds[19],seeds[20]];
+		 document.write("<br>");
+		 seedss.sort(function(a,b){
+		 	return a - b;
+		 })
+		 document.write(seedss);
+		 
+		 
+		
+	</script>
+</html>

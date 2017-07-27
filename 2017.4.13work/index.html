@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.box a {
+				padding-left: 20px;
+				background: url(img/ico.png) no-repeat ;
+			}
+			.box .checked {
+				background-position: 0 -32px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--math对象①取整parseint（math.random（）*（b-a+1)+a）
+			        ②floor。max.min、ceil
+			classname类名
+			this在函数中  指代调用当前函数的对象
+			自定义属性  
+		-->
+		<div class="box">
+			性别: <a href="javascript:" class="checked">男</a>
+			<a href="javascript:">女</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//1、控制循环
+		document.write("<hr>");
+		var max=0;
+		var min=100;
+		for(var i=0;i<=10;i++){
+			var run=parseInt(Math.random()*(99-66+1)+66);
+			document.write(run+" ");
+			max=run > max ? run : max ;
+			min=run > min ? min : run;
+		}
+		document.write("<br>");
+		document.write("max最大值是："+max+"<br>");
+		document.write("min最小值是："+min+"<br>");
+		//精灵图
+		var box=document.getElementsByClassName("box")[0];
+		var sexman=document.getElementsByTagName("a")[0];
+		var sexwonman=document.getElementsByTagName("a")[1];
+		sexman.onclick=function(){
+			sexman.className="checked";
+			sexwonman.className="";
+		}
+		sexwonman.onclick=function(){
+			sexman.className="";
+			sexwonman.className="checked";
+		}
+	</script>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul {
+				list-style: none;
+				width: 350px;
+				height: 50px;
+				display: flex;
+				justify-content: space-between;
+			}
+			ul li{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				border: 2px solid red;
+				color: red;
+				font-size: 20px;
+				line-height: 40px;
+				text-align: center;
+			}
+			.blue {
+				border: 2px solid blue;
+				color: blue;
+			}
+			button {
+				margin: 1% 5%;
+				display: block;
+				width: 100px;
+				height: 50px;
+				border-radius:10px ;
+				background: orange;
+				outline: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!--双色球-->
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li class="blue"></li>
+		</ul>
+		<button>随机一注</button>
+		<hr />
+	</body>
+	<script type="text/javascript">
+		//第一题
+		var seed = [];
+		var max = 0;
+		var min = 100;
+		var maxindex,minindex;
+		for (var i = 0;i < 10;i++) {
+			seed[i] = Math.floor(Math.random()*(99-66+1)+66);
+			 document.write(seed[i]+" ");
+			if (seed[i] > max) {
+				max = seed[i];
+				maxindex = i;
+			}
+			if (seed[i] < min) {
+				min = seed[i];
+				minindex = i;
+			}
+		}
+	   
+		document.write("<br>最大值是:"+max);
+		document.write("<br>最大值的下标:"+maxindex);
+		document.write("<br>最小值是:"+min);
+		document.write("<br>最小值的下标:"+minindex);
+		
+		//第二题
+		var seeds = [];
+		for (var j = 0;j < 20;j++) {
+			seeds[j] = Math.floor(Math.random()*(99-66+1)+66);
+			 document.write(seeds[j]+" ");
+		}
+		seeds.sort(function(a,b){
+			return a - b;
+		});
+		document.write("<br>"+seeds);
+		
+		//第三题
+		var year = 2017;
+		var month = 4;
+		var day = 14;
+		var total = 0;
+		var marr = [31,28,31,30,31,30,31,31,30,31,30,31];
+		if (year %400 ==0 || year %40 ==0 && year %100 != 0) {
+			marr[1] = 29;
+		}
+		//将前几个月天数累加
+		for (var i = 0;i < month-1;i++) {
+			total += marr[i];
+			
+		}
+		//当前月加
+		   total = total + day;
+		   document.write("<br>"+total);
+		   document.write("<hr>");
+		
+		
+		//第四题双色球
+		var btn = document.getElementsByTagName("button")[0];
+		var lis = document.getElementsByTagName("li");
+		//绑定事件
+		btn.onclick = function(){
+			//随机数红色
+			var ballnums = [];
+			while (ballnums.length < 6){
+				var n = randnum(1,33);
+				//假定数组中没有 false没有 true 有
+				var flag = false;
+				//遍历数组  判断是否重复
+				for (var i = 0;i < ballnums.length;i++) {
+					if (ballnums[i] == n) {
+						//代表该数已经存在,标记置反
+						flag = true;
+					}
+				}
+				if (flag == false) {
+					//存放数据
+				    ballnums.push(n);
+				}
+				
+			}
+			//生序
+			ballnums.sort(function(a,b){
+				return a - b;
+			})
+			
+			//若数字为小于10的数，在前面加0；
+			for (var i = 0;i < ballnums.length;i++) {
+				if (ballnums[i] < 10) {
+					ballnums[i] = "0" + ballnums[i];
+					
+				}
+				
+			}
+//			document.write(ballnums);
+			//蓝色数字
+			var m = randnum(1,16);
+			ballnums.push(m);
+			//显示
+			for (var i = 0;i < lis.length;i++) {
+				lis[i].innerText = ballnums[i];
+			}
+		// 定义函数 生成随机整数的函数
+		function randnum(a,b) {
+			return parseInt(Math.random()*(b-a+1)+a);
+		}
+			
+		}
+		
+		
+		
+		
+	</script>
+</html>
