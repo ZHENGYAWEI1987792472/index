@@ -1,0 +1,590 @@
+html,
+body {
+    background: #fbfbfb;
+}
+
+
+/*顶部导航*/
+
+.yj-nav {
+    width: 100%;
+    height: 208px;
+    background: #fbfbfb;
+    /*border: 1px solid;*/
+}
+
+
+/*收藏订阅帮助*/
+
+.yj-nav-top {
+    width: 980px;
+    height: 38px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.yj-nav-top a:nth-child(2) {
+    border-right: 1px solid;
+    border-left: 1px solid;
+    padding: 0 10px;
+}
+
+.yj-nav-top a {
+    float: right;
+    width: 66px;
+    height: 15px;
+    margin-top: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+
+
+/*遮盖层div*/
+
+.yj-nav-bottom {
+    width: 100%;
+    height: 169px;
+    margin-top: 11px;
+    background: #fff;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+}
+
+
+/*导航展示图片  logo 城市 搜索 联系电话*/
+
+.yj-nav-body {
+    width: 980px;
+    height: 169px;
+    /*border: 1px solid ;*/
+    margin: 0 auto;
+}
+
+
+/*导航展示图片*/
+
+.yj-nav-img {
+    width: 980px;
+    height: 70px;
+    /*border: 1px solid;*/
+    position: relative;
+}
+
+.yj-nav-img img {
+    width: 100%;
+    height: 70px;
+}
+
+.yj-nav-img img:nth-child(2) {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/*导航内容框*/
+
+.yj-nav-cont {
+    width: 980px;
+    height: 99px;
+    /*border: 1px solid red;*/
+}
+
+
+/*导航  logo*/
+
+.yj-body-cont img {
+    width: 156px;
+    height: 74px;
+    float: left;
+    margin-top: 13px;
+    /*border: 1px solid red;*/
+}
+
+
+/*导航 城市*/
+
+.yj-cont-site {
+    float: left;
+    width: 137px;
+    height: 74px;
+    /*border: 1px solid;*/
+    margin-top: 13px;
+    position: relative;
+}
+
+.yj-cont-site p {
+    font-size: 16px;
+    font-weight: 900px;
+    font-family: SimSun Regular;
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 35px;
+}
+
+.yj-cont-site span {
+    color: #213f7b;
+    font-family: SimSun Regular;
+    margin-left: 10px;
+}
+
+
+/*导航 搜索*/
+
+.yj-cont-input {
+    width: 375px;
+    height: 98px;
+    /*border: 1px solid red;*/
+    float: left;
+}
+
+
+/*导航 搜索商品服务类型*/
+
+.yj-input-top {
+    width: 307px;
+    height: 39px;
+    /*border: 1px solid;*/
+    overflow: hidden;
+}
+
+.yj-input-top ul {
+    width: 3200px;
+    height: 19px;
+    /*border: 1px solid red;*/
+    margin-top: 20px;
+}
+
+.yj-input-top ul li {
+    display: inline-block;
+    float: left;
+    height: 12px;
+    padding: 0 13px;
+    border-right: 1px solid;
+    font-size: 12px;
+    font-family: SimSun Regular;
+    line-height: 12px;
+    color: #666;
+}
+
+
+/*导航 搜索框*/
+
+.yj-input-bottom {
+    width: 375px;
+    height: 61px;
+    /*border: 1px solid;*/
+    position: relative;
+}
+
+.yj-input-bottom em {
+    position: absolute;
+    right: 70px;
+    top: 10px;
+    font-size: 16px;
+}
+
+.yj-input-bottom input {
+    width: 307px;
+    height: 34px;
+    float: left;
+    border: 2px solid #2a4e91;
+}
+
+
+/*导航 搜索按钮*/
+
+.yj-input-bottom button {
+    width: 60px;
+    height: 38px;
+    float: left;
+    background: #2a4e91;
+}
+
+.yj-input-bottom button:hover {
+    box-shadow: 1px 1px 1px 1px #2a4e91;
+}
+
+
+/*导航联系电话*/
+
+.yj-cont-phone {
+    height: 100px;
+    width: 200px;
+    float: right;
+    /*border: 1px solid;*/
+}
+
+.h3 {
+    float: right;
+    font-size: 25px;
+    font-family: MicrosoftYaHei Regular;
+    color: #2a4e91;
+    margin-top: 30px;
+}
+
+.yj-cont-phone i {
+    float: right;
+    font-size: 12px;
+    font-family: MicrosoftYaHei Regular;
+    color: #666;
+    line-height: 16px;
+}
+
+
+/*导航条*/
+
+
+/*首页 服务 团购*/
+
+.yj-list {
+    width: 100%;
+    height: 40px;
+    background: #2a4e91;
+    position: relative;
+}
+
+.yj-list-cont {
+    width: 980px;
+    height: 38px;
+    border: dashed 1px transparent;
+    margin: 0 auto;
+}
+
+.yj-list-cont a {
+    display: inline-block;
+    padding: 0 23px;
+    height: 38px;
+    /*border: 1px solid;*/
+    font-size: 14px;
+    font-family: SimSun Regular;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+
+/*个人 购物车 最近浏览*/
+
+.yj-list-message {
+    float: right;
+    width: 500px;
+    /*overflow: hidden;*/
+}
+
+.yj-list-message ul {
+    width: 503px;
+}
+
+.yj-list-message ul li {
+    display: inline-block;
+    float: right;
+    height: 38px;
+}
+
+.yj-list-message ul li>a {
+    padding: 0 16px;
+    font-size: 12px;
+    border-right: 1px solid;
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 10px;
+}
+
+.yj-list-message ul li:hover {
+    background: #fff;
+}
+
+.yj-list-message ul li:hover>a {
+    color: #2a4e91;
+}
+
+.color {
+    background: #101f4b;
+}
+
+
+/*********底部foot*************/
+
+.yj-foot {
+    margin-top: 20px;
+    width: 100%;
+    height: 420px;
+    background: #fbfbfb;
+    border-top: 7px solid #2a4e91;
+}
+
+.yj-foot-wrap {
+    width: 980px;
+    height: 383px;
+    /*border: 1px solid;*/
+    margin: 10px auto;
+}
+
+.yj-foot-header {
+    padding: 0 40px;
+    /*width: 980px;*/
+    height: 131px;
+    /*border: 1px solid;*/
+}
+
+.yj-foot-link {
+    width: 69px;
+    height: 80px;
+    border-left: 1px solid;
+    display: inline-block;
+    float: left;
+    padding: 24px 35px;
+}
+
+.yj-foot-link ul li a {
+    color: black;
+}
+
+.yj-foot-phone {
+    width: 265px;
+    height: 128px;
+    border-left: 1px solid;
+    display: inline-block;
+    float: right;
+    padding: 0 35px;
+}
+
+.yj-foot-phone ul {
+    width: 225px;
+    height: 74px;
+    background: #d1d1d1;
+    border-radius: 5px;
+    margin-top: 36px;
+    margin-left: 40px;
+}
+
+.yj-foot-phone ul li:nth-child(1) {
+    font-size: 14px;
+    font-family: MicrosoftYaHei Regular;
+    color: #b0b0b0;
+}
+
+.yj-foot-phone ul li:nth-child(2) {
+    font-size: 26px;
+    font-family: Arial Regular;
+    color: #555;
+}
+
+.yj-foot-copyright {
+    width: 980px;
+    height: 14px;
+    margin: 38px 0;
+    /*border: 1px solid;*/
+}
+
+.yj-foot-copyright a {
+    float: left;
+    margin-left: 13px;
+    color: #6f6f6f;
+    /*英文与汉语对不起 设置一样的字体*/
+    font-family: Adobe 黑体 Std R;
+}
+
+.yj-foot-pay {
+    margin-top: 28px;
+    height: 40px;
+    width: 500px;
+    margin: 0 auto;
+    /*border: 1px solid;*/
+}
+
+.yj-foot-pay img {
+    float: left;
+    margin-left: 15px;
+}
+
+.yj-foot-active {
+    border: 3px solid #d1d1d1;
+    width: 980px;
+    height: 40px;
+    padding: 30px 0 20px;
+    font-family: Adobe 黑体 Std R;
+    display: none;
+}
+
+.yj-foot-active a {
+    color: #6f6f6f;
+}
+
+.yj-foot-active a:hover {
+    color: lightskyblue;
+}
+
+
+/*回到顶部*/
+
+.yj-recur {
+    width: 54px;
+    /*height: 54px;*/
+    background: #666;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    margin-left: 500px;
+    color: white;
+}
+
+
+/*js交互css*/
+
+
+/*基于yj-nav-bottom定位*/
+
+.yj-site-city {
+    width: 564px;
+    height: 116px;
+    border: 3px solid #2a4e91;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    position: absolute;
+    left: -100px;
+    top: 100%;
+    display: none;
+}
+
+.yj-site-city h3 {
+    width: 100%;
+    height: 34px;
+    background: #2a4e91;
+    position: relative;
+}
+
+.yj-site-city h3 a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 34px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.yj-site-city h3 img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.yj-site-city h4 {
+    width: 100%;
+    height: 78px;
+    color: #ccc;
+    padding: 30px;
+    /*border: 1px solid red;*/
+    font-size: 16px
+}
+
+.yj-site-city h4 em {
+    width: 100px;
+    /*border: 1px solid;*/
+    display: inline-block;
+}
+
+
+/*购物车*/
+
+
+/*yj-pay定位*/
+
+.yj-pay {
+    position: relative;
+    z-index: 100;
+}
+
+.yj-message-pay {
+    width: 200px;
+    background: #fff;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 24px;
+    left: -50%;
+    display: none;
+}
+
+.yj-message-pay button {
+    border: 1px solid;
+    width: 100px;
+    background: #2a4e91;
+    text-align: center;
+    margin: 0px 50px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+#zy a {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.icon {
+    width: 1.1em;
+    height: 1.1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.icon1 {
+    width: 2.4em;
+    height: 2em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color: white;
+    margin-top: 5px;
+}
+
+.p {
+    font-size: 14px;
+    font-weight: 900px;
+    font-family: SimSun Regular;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid;
+    transform: rotateZ(45deg);
+}
+
+.a {
+    display: inline-block;
+    margin-right: 10px;
+    border-style: solid solid none;
+    border-width: 5px 5px medium;
+    padding: 5px;
+    color: black;
+}
+
+.a:hover {
+    border-color: rgb(42, 78, 145);
+    background: rgb(139, 132, 180);
+}
+
+.show {
+    display: block;
+}

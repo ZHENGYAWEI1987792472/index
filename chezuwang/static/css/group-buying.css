@@ -1,0 +1,297 @@
+/*整体内容的框*/
+
+.yj-main {
+    width: 980px;
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 11px;
+}
+
+
+/*抢购提示框*/
+
+.yj-top-hint {
+    width: 980px;
+    /*height: 41px;*/
+    background: #fff;
+    line-height: 41px;
+    border: 1px solid #ccc;
+    text-indent: 2em;
+}
+
+.yj-top-hint span {
+    color: red;
+    font-size: 14px;
+}
+
+.yj-top-hint a {
+    color: red;
+    font-size: 14px;
+}
+
+
+/*服务类提示框*/
+
+.yj-group-box {
+    width: 980px;
+    background: #fff;
+    /*height: 287px;*/
+    margin-top: 6px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.yj-group-serve {
+    width: 100%;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    line-height: 37px;
+}
+
+.yj-group-serve span {
+    display: inline-block;
+    font-size: 12px;
+    font-family: Adobe 黑体 Std R;
+    font-weight: 900;
+    text-indent: 2em;
+}
+
+.yj-group-serve a {
+    padding: 0 10px;
+}
+
+.yj-kid-box {
+    width: 100%;
+    /*height: 219px;*/
+    border-bottom: 1px solid #ccc;
+}
+
+.yj-group-area,
+.yj-group-kid {
+    padding: 0 20px;
+}
+
+.yj-group-area strong.yj-group-kid strong {
+    padding: 10px;
+}
+
+.yj-group-area a,
+.yj-group-kid a {
+    display: inline-block;
+    padding: 10px 10px;
+    color: #2a4e91;
+}
+
+.yj-group-area span,
+.yj-group-kid span {
+    color: #ccc;
+}
+
+.yj-group-sort {
+    padding: 5px;
+}
+
+.yj-group-sort a,
+.yj-group-sort span {
+    display: inline-block;
+    padding: 3px 10px;
+    background: #f9f9f9;
+    float: left;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+.yj-group-sort span {
+    margin-left: 2em;
+}
+
+.yj-kid-box .yj-sort-bggray {
+    background: #eeeded;
+}
+
+.yj-kid-box .yj-group-bgblue {
+    background: #2a4e91;
+    color: white;
+    padding: 2px 5px;
+}
+
+.yj-group-left {
+    /*border: 1px solid red;*/
+    width: 736px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.yj-group-pay {
+    background: #fff;
+    width: 321px;
+    height: 332px;
+    border: 1px solid #ccc;
+    padding: 13px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 19px;
+    margin-top: 14px;
+}
+
+.yj-group-pay h4 {
+    font-size: 18px;
+    font-family: Adobe 黑体 Std R;
+    font-weight: 900;
+    color: black;
+}
+
+.yj-group-pay span {
+    display: inline-block;
+    font-size: 16px;
+    font-family: Adobe 黑体 Std R;
+    color: #666;
+    height: 44px;
+    overflow: hidden;
+}
+
+.yj-group-img {
+    width: 231px;
+    height: 70px;
+    background: url("../image/group-buy-img/grounpbg.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -10px;
+}
+
+.yj-group-img strong {
+    font-size: 30px;
+    font-family: FZHTJW -GB1-0;
+    color: #e40d1a;
+    line-height: 70px;
+    padding: 0 17px;
+}
+
+.yj-group-img b {
+    font-size: 12px;
+    font-family: Adobe 黑体 Std R;
+    color: #666;
+    line-height: 70px;
+}
+
+.yj-group-img+a {
+    float: right;
+    padding: 15px 0;
+    display: block;
+}
+
+.yj-group-pay i {
+    position: absolute;
+    right: 27px;
+    bottom: 20px;
+}
+
+.yj-group-right {
+    width: 238px;
+    /*border: 1px solid;*/
+    float: right;
+    margin-top: 14px;
+}
+
+.yj-group-skip {
+    padding: 19px 15px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.yj-right-msg h3.yj-group-skip h3 {
+    font-size: 14px;
+    font-family: SimSun Regular;
+}
+
+.yj-group-skip li {
+    padding: 19px 3px 3px;
+    position: relative;
+}
+
+.yj-group-skip li:hover {
+    background: #a7a7a7;
+}
+
+.yj-group-skip li h4 {
+    font-size: 12px;
+    font-family: SimSun Regular;
+    color: black;
+    padding: 0 0 5px;
+}
+
+.yj-group-skip li h4 span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #1376ce;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 3px;
+    color: white;
+}
+
+.yj-group-skip li b {
+    position: absolute;
+    bottom: 25px;
+    padding: 2px;
+}
+
+.yj-group-skip li i {
+    color: #ccc;
+    font-weight: 900;
+    padding: 5px;
+}
+
+.yj-group-skip li i em {
+    color: black;
+    font-weight: 900;
+}
+
+.yj-margin {
+    margin-bottom: 11px;
+}
+
+.yj-group-spoil {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 11px;
+}
+
+.yj-spoil-top {
+    width: 100%;
+    background: url("../image/group-buy-img/right2.png") no-repeat;
+    background-size: 71px 58px;
+    padding: 10px 0 0 72px;
+}
+
+.yj-spoil-top p {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.yj-right-msg span,
+.yj-group-spoil a {
+    line-height: 32px;
+    display: block;
+    color: black;
+}
+
+.yj-group-spoil a:hover {
+    color: #096edf;
+}
+
+.yj-right-msg {
+    padding: 11px;
+    background: #fff;
+    font-size: 12px;
+}
+
+.yj-group-red {
+    color: red;
+}
+
+.yj-group-blue {
+    color: #096edf;
+}

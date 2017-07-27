@@ -1,0 +1,227 @@
+.yj-main{
+	width: 980px;
+	/*border: 1px solid red;*/
+	margin:0 auto;
+	/*height: 900px;*/
+	margin-top: 11px;
+	
+}
+
+.yj-main-header{
+	height: 265px;
+	width: 990px;
+	/*border: 1px solid;*/
+	
+}
+.yj-header-lift{
+	width: 183px;
+	/*height: 265px;*/
+	border: 2px solid #2a4e91;
+	float: left;
+}
+.yj-header-cont{
+	width: 529px;
+	height: 265px;
+	/*border: 1px solid lawngreen;*/
+	margin-left: 11px;
+	float: left;
+	position: relative;
+	
+}
+.yj-header-right{
+	width: 240px;
+	/*height: 196px;*/
+	/*border: 1px solid lime;*/
+	margin-left: 18px;
+	float: left;
+	margin-top: 0px;
+}
+.yj-lift-top{
+	width: 100%;
+	height: 42px;
+	background:#2a4e91 ;
+	color:white;
+	text-indent: 2em;
+	font-size: 16px;
+	font-family: MicrosoftYaHei Regular;
+	line-height: 42px;
+}
+.yj-main-h3{
+	font-size: 14px;
+	font-family: Adobe 黑体 Std R;
+    text-indent: 1em;
+	width: 100%;
+	height: 31px;
+	line-height: 31px;
+	background: #e9e9e9;
+	/*border-top:1px solid #fff ;*/
+	border-bottom:1px solid #fff ;
+}
+.yj-main-i{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-top: 1px solid #2A4E91;
+	border-right: 1px solid #2A4E91;
+	transform: rotateZ(45deg);
+	margin-left: 80px;
+}
+.yj-header-cont img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*opacity: 0;*/	
+	/*z-index: -1;*/
+}
+.yj-main-body{
+	width: 730px;
+	/*border: 1px solid red;*/
+	margin-top: 12px;
+}
+.yj-body-nav{
+	width: 722px;
+	height: 46px;
+	font-size: 16px;
+	font-family: Adobe 黑体 Std R;
+	line-height: 46px;
+	text-indent: 2em;
+	color: #2A4E91;
+	border-left:6px solid #2A4E91 ;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	background: #fff;
+}
+.yj-body-matter{
+	width: 730px;
+    overflow: hidden;
+    float: left;
+}
+.yj-matter-img,.yj-matter-imgnot{
+	width: 168px;
+	height: 173px;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	padding: 1px;
+	border: 1px solid #ccc;
+	background: #fff;
+	display: inline-block;
+	margin-top: 11px;
+	overflow: hidden;
+	position: relative;
+}
+.yj-matter-imgnot img:nth-child(2){
+	position: absolute;
+	right: 1px;
+	top: 1px;
+}
+.yj-matter-img{
+	float: right;
+	margin-left:14px;
+	}
+.yj-matter-imgnot p,.yj-matter-img p{
+	font-size: 12px;
+	font-family: Adobe 黑体 Std R;
+	/*white-space:nowrap;*/ 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	height: 50px;	
+	color: #666;	
+}
+.yj-matter-imgnot span,.yj-matter-img span{
+	font-size: 12px;
+	font-family: Adobe 黑体 Std R;
+	/*white-space:nowrap;*/ 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	color: #8c8a8a;
+	float: left;	
+}
+.yj-matter-imgnot em,.yj-matter-img em{
+	font-size: 18px;
+	font-family: Adobe 黑体 Std R;
+	color: #e40d1a;
+	float: right;
+	line-height: 18px;
+}
+.yj-body-matter b{
+	float: right;
+	margin-right: 20px;
+	position: relative;
+	color:#2a4e91;
+	cursor:pointer
+}
+.yj-body-matter b em{
+	/*content: "";*/
+	position: absolute;
+	/*width: 0;*/
+	/*height: 0;*/
+	border: 5px solid transparent; 
+	/*border-top:0 ;*/
+	bottom: 2px;
+	left: 100%;
+	border-top: 5px solid #2a4e91;
+}
+.yj-main-right{
+	width: 237px;
+    background: #fff;
+    float: right;
+    border: 1px solid #ccc;
+    
+}
+.yj-right-top{
+	width: 100%;
+	height: 30px;
+	color: black;
+	font-size: 16px;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+.yj-right-top p{
+	display: inline-block;
+	font-family: Adobe 黑体 Std R;
+	font-weight: 900;
+	margin-right: 100px;
+}
+.yj-right-top i{
+	display: inline-block;
+	font-family: Adobe 黑体 Std R;
+	color: #2a4e91 ;
+	font-size: 12px;
+	 cursor:pointer
+}
+.yj-right-msg1{
+	padding:0 20px;
+}
+.yj-right-msg1 li{
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0 10px 0;
+    font-size: 12px;
+}
+.yj-right-msg1 li p a
+{display: inline-block;
+	color: #666;
+	font-family: Adobe 黑体 Std R;
+    height: 34px;
+	overflow: hidden;
+	}
+.yj-right-msg1 li h4
+{
+	font-family: Adobe 黑体 Std R;
+	line-height: 33px;
+	color: #666;
+}
+ .yj-right-msg1 span{
+	display:inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+   background: #666;
+   position: absolute;
+   left: -10px;
+   top: 15px;
+}
+.yj-matter-show{
+	display: none;
+}
+.yj-body-matter:hover .yj-matter-show{
+	display: block;
+}
